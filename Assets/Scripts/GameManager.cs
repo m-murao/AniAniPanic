@@ -45,7 +45,7 @@ public class GameManager : MonoBase
     private bool IsRemainGameTimeZero { get { return state > State.Game; } }
 
     private const float CountMaxTime = 3.5f;
-    private const float GameMaxTime = 60;
+    private const float GameMaxTime = 30;
     private float startTime = 0;
     public float ElapsedTime { get { return Time.realtimeSinceStartup - startTime; } }
     public int CountTime { get { return Mathf.Max(0, Mathf.CeilToInt(CountMaxTime - ElapsedTime - 0.5f)); } }
